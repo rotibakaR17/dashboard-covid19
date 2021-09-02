@@ -48,7 +48,7 @@ const MyContent = () => {
             <Content style={{ padding: '50px' }}> 
                 <Layout className="site-layout-background" style={{ padding: '24px 0' }}>
                     <Content style={{ padding: '0 24px', minHeight: 280 }}> 
-                        <div className="filterButton">
+                        <div className="filterButton" style={{ padding : '10px 10px 40px 10px'}} >
                             <Button onClick = {clickAllDatas} >Data Keseluruhan</Button>
                             <Button onClick = {clickSixMonth} >Data 6 Bulan Terakhir</Button>
                             <Button onClick = {clickLastMonth} >Data 30 Hari Terakhir</Button> 
@@ -57,7 +57,9 @@ const MyContent = () => {
                     </Content>
                 </Layout>
             </Content>
-        <Footer style={{ textAlign: 'center' }}>Ant Design ©2018 Created by Ant UED</Footer>
+        <Footer style={{ textAlign: 'center' }}>
+            Data Provided by apicovid19indonesia-v2.vercel.app<br/>Ant Design ©2018 Created by Ant UED
+        </Footer>
         </Layout>
     );
 }
